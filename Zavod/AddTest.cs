@@ -106,7 +106,7 @@ namespace Zavod
             Result = comboBoxResult.Text;
             Date = dateTest.Value.ToString("dd.MM.yyyy");
 
-            ClassLibrary.Test cl_addTest = new ClassLibrary.Test();
+            ClassLibrary.Testing cl_addTest = new ClassLibrary.Testing();
             bool result = cl_addTest.Add(Rocket, Type, Result, Date, InfoEmployee);
             if (result == true)
             {

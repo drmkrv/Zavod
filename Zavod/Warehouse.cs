@@ -53,7 +53,7 @@ namespace Zavod
         private void buttonAddSP_Click(object sender, EventArgs e)
         {
             AddSparePart window = new AddSparePart();
-            window.Show();
+            window.ShowDialog();
         }
 
         private void buttonDeleteSP_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace Zavod
         private void buttonAddRocket_Click(object sender, EventArgs e)
         {
             AddRocket window = new AddRocket();
-            window.Show();
+            window.ShowDialog();
         }
 
         private void buttonDeleteRocket_Click(object sender, EventArgs e)

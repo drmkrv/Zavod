@@ -74,7 +74,9 @@ namespace Zavod
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = false;
+            this.Hide();
+            Auth window = new Auth();
+            window.Show();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

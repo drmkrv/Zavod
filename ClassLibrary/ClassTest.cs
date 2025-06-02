@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Test
+    public class Testing
     {
         public bool Add(int Rocket, string Type, string Result, string Date, int Employee)
         {

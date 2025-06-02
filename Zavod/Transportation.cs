@@ -51,7 +51,7 @@ namespace Zavod
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             AddTransportation window = new AddTransportation(Convert.ToInt32(InfoEmployee));
-            window.Show();
+            window.ShowDialog();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)

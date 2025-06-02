@@ -37,7 +37,7 @@ namespace Zavod
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             AddSupply window = new AddSupply();
-            window.Show();
+            window.ShowDialog();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
