@@ -74,5 +74,12 @@ namespace Zavod
             Menu window = new Menu(Convert.ToInt32(InfoEmployee));
             window.Show();
         }
+
+        private void Supply_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Menu window = new Menu(Convert.ToInt32(InfoEmployee));
+            window.Show();
+        }
     }
 }
