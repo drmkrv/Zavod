@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Страница — 1" id="6fp5ITF8Sp6Qj6g9FgyA">
+    <mxGraphModel dx="1426" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kb77pIlezoc8ozJCLLs9-1" value="Модуль графического интерфейса" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="30" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-3" value="Модуль базы данных" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="470" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-5" value="Модуль графического интерфейса" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-6" value="Клиентский модуль" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="460" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-8" value="Подсистема учёта деталей и ракет" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kb77pIlezoc8ozJCLLs9-6">
+          <mxGeometry x="10" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-9" value="Подсистема управления поставками" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kb77pIlezoc8ozJCLLs9-6">
+          <mxGeometry x="170" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-10" value="Подсистема управления тестированиями ракет" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kb77pIlezoc8ozJCLLs9-6">
+          <mxGeometry x="330" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-11" value="Подсистема управления транспортировками ракет" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kb77pIlezoc8ozJCLLs9-6">
+          <mxGeometry x="90" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kb77pIlezoc8ozJCLLs9-12" value="Подсистема учёта сотрудников&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kb77pIlezoc8ozJCLLs9-6">
+          <mxGeometry x="254" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
