@@ -25,7 +25,7 @@ namespace ClassLibrary
                     using (SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog = Factory; Integrated Security = True"))
                     {
                         conn.Open();
-                        SqlCommand cmd = new SqlCommand($"INSERT INTO [Rocket] (ModelRocket, Status, DateStartBuild, DateEndBuild) VALUES ('{Model}', N'{Status}', '{DateStart}', '{DateEnd}')", conn);
+                        SqlCommand cmd = new SqlCommand($"INSERT INTO [Rocket] (ModelRocket, Status, DateStartBuild, DateEndBuild) VALUES (N'{Model}', N'{Status}', N'{DateStart}', N'{DateEnd}')", conn);
                         cmd.ExecuteScalar();
                         result = true;
                         conn.Close();

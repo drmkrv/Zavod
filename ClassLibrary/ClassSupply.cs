@@ -20,7 +20,7 @@ namespace ClassLibrary
                     using (SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog = Factory; Integrated Security = True"))
                     {
                         conn.Open();
-                        SqlCommand cmd = new SqlCommand($"INSERT INTO [Supply] (SparePart, Provider, Count, DateOrder, Status) VALUES ('{SP}', '{Provider}', '{Count}', '{DateTime.Today.ToString("yyyy.MM.dd")}', 'Новый')", conn);
+                        SqlCommand cmd = new SqlCommand($"INSERT INTO [Supply] (SparePart, Provider, Count, DateOrder, Status) VALUES (N'{SP}', N'{Provider}', N'{Count}', N'{DateTime.Today.ToString("yyyy.MM.dd")}', N'Новый')", conn);
                         cmd.ExecuteScalar();
                         result = true;
                         conn.Close();

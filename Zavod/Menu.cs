@@ -27,13 +27,13 @@ namespace Zavod
             {
                 this.buttonEmployee.Enabled = false;
                 this.buttonTest.Enabled = false;
+                this.buttonTransportation.Enabled = false;
             }
             else if ((int)PostEmployee == 3)
             {
                 this.buttonSupply.Enabled = false;
                 this.buttonWarehouse.Enabled = false;
                 this.buttonEmployee.Enabled = false;
-                this.buttonTransportation.Enabled = false;
             }
         }
 

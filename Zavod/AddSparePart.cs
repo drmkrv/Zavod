@@ -12,15 +12,18 @@ namespace Zavod
 {
     public partial class AddSparePart : Form
     {
+        int InfoEmployee;
         string NameSP;
         int CountSP;
-        public AddSparePart()
+        public AddSparePart(int IDEmployee)
         {
             InitializeComponent();
+            InfoEmployee = IDEmployee;
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            Warehouse window = new Warehouse(InfoEmployee);
             NameSP = textBoxName.Text;
             CountSP = (int)numericUpDownCount.Value;
 

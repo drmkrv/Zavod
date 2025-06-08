@@ -34,12 +34,11 @@ namespace Zavod
             this.rocketTableAdapter.Fill(this.factoryDataSet.Rocket);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "factoryDataSet.SparePart". При необходимости она может быть перемещена или удалена.
             this.sparePartTableAdapter.Fill(this.factoryDataSet.SparePart);
-
         }
 
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
-            AddSparePart window = new AddSparePart();
+            AddSparePart window = new AddSparePart(InfoEmployee);
             window.Show();
         }
 
@@ -52,7 +51,7 @@ namespace Zavod
 
         private void buttonAddSP_Click(object sender, EventArgs e)
         {
-            AddSparePart window = new AddSparePart();
+            AddSparePart window = new AddSparePart(InfoEmployee);
             window.ShowDialog();
         }
 

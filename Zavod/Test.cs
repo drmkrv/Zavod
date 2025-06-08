@@ -50,12 +50,12 @@ namespace Zavod
             DataGridViewRow selectedRow = testDataGridView.SelectedRows[0];
             int id = Convert.ToInt32(selectedRow.Cells[0].Value);
             DialogResult result = MessageBox.Show("Удалить выбранную запись?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            ClassLibrary.Transportation cl_Transportation = new ClassLibrary.Transportation();
+            ClassLibrary.Testing cl_Testing = new ClassLibrary.Testing();
             if (result == DialogResult.Yes)
             {
                 try
                 {
-                    if (cl_Transportation.Delete(id))
+                    if (cl_Testing.Delete(id))
                     {
                         testDataGridView.Rows.Remove(selectedRow);
                         MessageBox.Show("Запись успешно удалена!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);

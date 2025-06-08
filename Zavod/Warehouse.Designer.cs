@@ -37,9 +37,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonBack1 = new System.Windows.Forms.Button();
             this.sparePartDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sparePartBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.factoryDataSet = new Zavod.FactoryDataSet();
             this.button1 = new System.Windows.Forms.Button();
@@ -59,6 +56,9 @@
             this.sparePartTableAdapter = new Zavod.FactoryDataSetTableAdapters.SparePartTableAdapter();
             this.tableAdapterManager = new Zavod.FactoryDataSetTableAdapters.TableAdapterManager();
             this.rocketTableAdapter = new Zavod.FactoryDataSetTableAdapters.RocketTableAdapter();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -153,28 +153,6 @@
             this.sparePartDataGridView.Size = new System.Drawing.Size(1233, 513);
             this.sparePartDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_SparePart";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID Детали";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NameSparePart";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование детали";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Count";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
             // sparePartBindingSource
             // 
             this.sparePartBindingSource.DataMember = "SparePart";
@@ -251,10 +229,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonBack2.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel2.SetColumnSpan(this.buttonBack2, 2);
             this.buttonBack2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.buttonBack2.Location = new System.Drawing.Point(3, 556);
             this.buttonBack2.Name = "buttonBack2";
-            this.buttonBack2.Size = new System.Drawing.Size(613, 30);
+            this.buttonBack2.Size = new System.Drawing.Size(1233, 30);
             this.buttonBack2.TabIndex = 7;
             this.buttonBack2.Text = "Назад";
             this.buttonBack2.UseVisualStyleBackColor = false;
@@ -374,6 +353,28 @@
             // 
             this.rocketTableAdapter.ClearBeforeFill = true;
             // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Count";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NameSparePart";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование детали";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_SparePart";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID Детали";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
             // Warehouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,14 +409,14 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private FactoryDataSet factoryDataSet;
-        private System.Windows.Forms.BindingSource sparePartBindingSource;
-        private FactoryDataSetTableAdapters.SparePartTableAdapter sparePartTableAdapter;
-        private FactoryDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        public FactoryDataSet factoryDataSet;
+        public System.Windows.Forms.BindingSource sparePartBindingSource;
+        public FactoryDataSetTableAdapters.SparePartTableAdapter sparePartTableAdapter;
+        public FactoryDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private FactoryDataSetTableAdapters.RocketTableAdapter rocketTableAdapter;
+        public FactoryDataSetTableAdapters.RocketTableAdapter rocketTableAdapter;
         private System.Windows.Forms.BindingSource rocketBindingSource;
-        private System.Windows.Forms.DataGridView rocketDataGridView;
+        public System.Windows.Forms.DataGridView rocketDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
@@ -424,13 +425,13 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridView sparePartDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        public System.Windows.Forms.DataGridView sparePartDataGridView;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonBack1;
         private System.Windows.Forms.Button buttonBack2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

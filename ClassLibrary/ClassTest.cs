@@ -39,7 +39,7 @@ namespace ClassLibrary
             using (SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Factory;Integrated Security=True"))
             {
                 conn.Open();
-                string sql = "DELETE FROM Supply WHERE SupplyNumber = @ID";
+                string sql = "DELETE FROM Test WHERE NumberTest = @ID";
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
