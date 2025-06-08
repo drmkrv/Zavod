@@ -1,0 +1,34 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Страница — 1" id="AZ89-L899Rp95lhiLgUH">
+    <mxGraphModel dx="2066" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="600" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-2" value="Логотип" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="114" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-4" value="Наименование" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="153" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-5" value="Текст" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="340" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-6" value="Текст" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="420" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-7" value="Кнопка" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="555" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-8" value="Поле для ввода текста" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="340" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C7hkpd-mG1Fb-wzc1eJx-10" value="Поле для ввода текста" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="420" width="230" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
