@@ -25,7 +25,6 @@ namespace Zavod
             object PostEmployee = cl_auth.GetPost(IDemployee.ToString());
             if ((int)PostEmployee == 1)
             {
-                this.buttonTransportation.Enabled = false;
                 this.buttonEmployee.Enabled = false;
                 this.buttonTest.Enabled = false;
             }
@@ -34,6 +33,7 @@ namespace Zavod
                 this.buttonSupply.Enabled = false;
                 this.buttonWarehouse.Enabled = false;
                 this.buttonEmployee.Enabled = false;
+                this.buttonTransportation.Enabled = false;
             }
         }
 
